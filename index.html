@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeeZii Developer Guide</title>
+    <title>LaMiChiKo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -33,91 +33,6 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>BeeZii Developer Guide</h1>
-        <p>Welcome to the BeeZii developer documentation! This guide provides an overview of the game's mechanics, architecture, and development workflow.</p>
-        
-        <h2>Game Overview</h2>
-        <p><strong>BeeZii</strong> is a fast-paced endless flying game where players control a bee, dodging obstacles and collecting honey drops to achieve the highest score.</p>
-        
-        <h2>Core Features</h2>
-        <ul>
-            <li>🐝 Tap to fly mechanics</li>
-            <li>🍯 Collect different types of honey drops</li>
-            <li>⚠️ Avoid birds, carnivorous plants, and other hazards</li>
-            <li>📈 Increasing difficulty as the game progresses</li>
-            <li>🎶 Immersive sound effects and background music</li>
-            <li>🏆 Global leaderboard and high score tracking</li>
-            <li>📢 Share scores via social media</li>
-            <li>🎬 Smooth animations and parallax scrolling</li>
-        </ul>
-        
-        <h2>Gameplay Mechanics</h2>
-        <h3>Controls</h3>
-        <ul>
-            <li><code>Tap</code> to make the bee jump.</li>
-            <li>Gravity pulls the bee down when idle.</li>
-        </ul>
-        
-        <h3>Obstacles</h3>
-        <ul>
-            <li>Birds move in straight or wave patterns.</li>
-            <li>Carnivorous plants trigger an attack animation when close.</li>
-            <li>Honey drops spawn at variable rates depending on difficulty.</li>
-        </ul>
-        
-        <h2>Development Guidelines</h2>
-        <h3>Project Structure</h3>
-        <ul>
-            <li><code>Scripts/Controllers</code>: Handles movement and game logic.</li>
-            <li><code>Scripts/Managers</code>: Handles UI, Ads, Audio, and Scores.</li>
-            <li><code>Prefabs/</code>: Stores reusable game objects like Bee, Honey, and Obstacles.</li>
-            <li><code>Scenes/</code>: Main Menu, Game, Game Over.</li>
-        </ul>
-        
-        <h3>Technical Stack</h3>
-        <ul>
-            <li><strong>Engine:</strong> Unity (C#)</li>
-            <li><strong>UI Framework:</strong> Unity UI (Canvas-based)</li>
-            <li><strong>Audio:</strong> Unity Audio Source</li>
-            <li><strong>Ad Integration:</strong> Unity Ads</li>
-            <li><strong>Sharing:</strong> Platform-dependent (Android Intent / iOS UIActivityViewController)</li>
-        </ul>
-        
-        <h3>Game Difficulty Progression</h3>
-        <p>The game increases in difficulty over time by:</p>
-        <ul>
-            <li>Reducing the time between obstacle spawns.</li>
-            <li>Introducing birds that follow wave-like movements.</li>
-            <li>Randomizing honey drop values and rarity.</li>
-        </ul>
-        
-        <h2>Useful Code Snippets</h2>
-        <h3>Spawning Honey Drops</h3>
-        <pre><code>
-void AssignHoneyProperties(HoneyModel honeyModel)
-{
-    bool isRare = Random.Range(0, 10) == 0; // 10% chance
-    int points = isRare ? 10 : 5;
-    honeyModel.SetPointValue(points);
-}
-        </code></pre>
-        
-        <h3>Controlling Bird Movement</h3>
-        <pre><code>
-void Update()
-{
-    if (movementType == 1)
-    {
-        sinWaveTime += Time.deltaTime * speed;
-        float sinOffset = Mathf.Sin(sinWaveTime) * sinWaveAmplitude;
-        transform.position = new Vector3(transform.position.x, originalY + sinOffset, transform.position.z);
-    }
-}
-        </code></pre>
-        
-        <h2>Final Notes</h2>
-        <p>Make sure to test thoroughly on different devices and adjust UI scaling as needed. Have fun developing BeeZii! 🐝</p>
-    </div>
+  LaMiChiKo
 </body>
 </html>
